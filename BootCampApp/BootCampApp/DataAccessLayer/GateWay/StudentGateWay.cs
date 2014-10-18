@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootCampApp.DataAccessLayer.DataAccessObject;
+using BootCampApp.DataAccessLayer.View;
 
 namespace BootCampApp.DataAccessLayer.GateWay
 {
@@ -15,49 +16,79 @@ namespace BootCampApp.DataAccessLayer.GateWay
 
         public StudentGateWay()
         {
-            string conn = ConfigurationManager.ConnectionStrings["BootCamp"].ConnectionString;
+            string conn = @"server=NASER; database=BootCamp;integrated security=true";
             connection = new SqlConnection();
             connection.ConnectionString = conn;
         }
 
-        public string SaveEnroll(Student aStudent, string sysDate)
+
+        public string Enroll(Student aStudent)
         {
             connection.Open();
-            string query = string.Format("INSERT INTO t_StudentEnroll VALUES(@aNewReg, @aNewCourse,@aNewDate)");
+            string query = string.Format("INSERT INTO Student VALUES('{0}','{1}','{2}',{3})", aStudent.RegNo,
+                aStudent.Name,aStudent.Email, aStudent.CourseId);
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.Add(new SqlParameter("@aNewReg", aStudent.RegNo));
-            command.Parameters.Add(new SqlParameter("@aNewCourse", aStudent.Courses));
-            command.Parameters.Add(new SqlParameter("@aNewDate", sysDate));
 
             int affectedRows = command.ExecuteNonQuery();
             connection.Close();
             if (affectedRows > 0)
-                return "Student enrollment has been saved to database";
-            return "Something went wrong";
+                return "insert success";
+            return "something wrong";
         }
 
-        public string HasThisStudent(string regNo)
+
+        public List<StudentCourseView> GetStudent(string regNo)
         {
             connection.Open();
-            string query = string.Format("SELECT * FROM t_Student WHERE Student_RegNo=@aNewID");
+            string query = string.Format("SELECT * FROM View_1 WHERE RegNo = '{0}'", regNo);
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.Add(new SqlParameter("@aNewID", regNo));
             SqlDataReader aReader = command.ExecuteReader();
-
-
-            Student aStudent = new Student();
+            List<StudentCourseView> student = new List<StudentCourseView>();
             if (aReader.HasRows)
             {
                 while (aReader.Read())
                 {
-                    
-                    aStudent.Name = aReader[0].ToString();
-                    aStudent.Email = aReader[1].ToString();
-                    //student.Add(aStudent);
+                    StudentCourseView aStudentCourseView = new StudentCourseView();
+
+                    aStudentCourseView.RegNo = aReader[0].ToString();
+                    aStudentCourseView.Name =  aReader[1].ToString();
+
+                    aStudentCourseView.Email = aReader[2].ToString();
+                    aStudentCourseView.Title = aReader[3].ToString();
+                    aStudentCourseView.CourseId = (int) aReader[4];
+
+                    student.Add(aStudentCourseView);
                 }
             }
             connection.Close();
-            return ;
+            return student;
+        }
+
+        public List<StudentCourseView> GetAllStudent()
+        {
+            connection.Open();
+            string query = string.Format("SELECT * FROM View_1");
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader aReader = command.ExecuteReader();
+            List<StudentCourseView> students = new List<StudentCourseView>();
+            if (aReader.HasRows)
+            {
+                while (aReader.Read())
+                {
+                    StudentCourseView aStudentCourseView = new StudentCourseView();
+
+                    aStudentCourseView.RegNo = aReader[0].ToString();
+                    aStudentCourseView.Name = aReader[1].ToString();
+
+                    aStudentCourseView.Email = aReader[2].ToString();
+                    aStudentCourseView.Title = aReader[3].ToString();
+                    aStudentCourseView.CourseId = (int)aReader[4];
+
+                    students.Add(aStudentCourseView);
+                }
+            }
+            connection.Close();
+            return students;
         }
     }
 }

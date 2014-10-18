@@ -7,36 +7,66 @@ using BootCampApp.DataAccessLayer.DataAccessObject;
 using BootCampApp.DataAccessLayer.GateWay;
 using BootCampApp.DataAccessLayer.View;
 
+
 namespace BootCampApp.BusinessLogicLayer
 {
     class StudentBll
     {
-        public  StudentGateWay aStudentGateWay;
-        public CourseGateWay aCourseGateWay;
-        public List<Student> Students { set; get; }
-        public List<Course> Courses { set; get; }
-
-        private Student aStudent;
+        StudentGateWay aStudentGateWay;
 
         public StudentBll()
         {
             aStudentGateWay = new StudentGateWay();
-            aCourseGateWay = new CourseGateWay();
         }
 
-        public Enrollment SearchRegNo(string regNo)
+
+        public string Enroll(Student aStudent)
         {
-            Enrollment anEnrollment=new Enrollment();
-            if (HasThisStudent(regNo))
+
+            if (aStudent.RegNo == string.Empty || aStudent.Name == string.Empty || aStudent.Email == string.Empty)
             {
-                //anEnrollment=
+                return "please fill up all field";
             }
-            return null;
+            else
+            {
+                if (!HasThisEnrollValid(aStudent))
+                {
+                    aStudentGateWay.Enroll(aStudent);
+                    return "Successfully Enrolled";
+                }
+                else
+                {
+                    
+                    return "Course Already Enrolled";
+                }
+            }
+
+        }
+        private bool HasThisEnrollValid(Student aStudent)
+        {
+
+            aStudentGateWay = new StudentGateWay();
+
+            List<StudentCourseView> studentList = aStudentGateWay.GetAllStudent();
+
+            foreach (StudentCourseView student in studentList)
+            {
+                if ((aStudent.Name == student.Name) && (aStudent.CourseId == student.CourseId))
+                {
+                    return true;
+                }
+            }
+            return false;
+
+
         }
 
-        public bool HasThisStudent(string regNo)
+
+
+        public List<StudentCourseView> GetStudent(string regNo)
         {
-           return aStudentGateWay.HasThisStudent(regNo);
+            return aStudentGateWay.GetStudent(regNo);
         }
+
     }
 }
