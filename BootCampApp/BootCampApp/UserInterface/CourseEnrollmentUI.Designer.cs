@@ -151,7 +151,7 @@
             this.enrollButton.TabIndex = 3;
             this.enrollButton.Text = "Enroll";
             this.enrollButton.UseVisualStyleBackColor = true;
-            this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
+            //this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
             // 
             // groupBox1
             // 

@@ -50,7 +50,9 @@
     <Compile Include="DataAccessLayer\DataAccessObject\Course.cs" />
     <Compile Include="DataAccessLayer\DataAccessObject\Student.cs" />
     <Compile Include="DataAccessLayer\GateWay\CourseGateWay.cs" />
+    <Compile Include="DataAccessLayer\GateWay\EnrollmentGateWay.cs" />
     <Compile Include="DataAccessLayer\GateWay\StudentGateWay.cs" />
+    <Compile Include="DataAccessLayer\View\Enrollment.cs" />
     <Compile Include="UserInterface\CourseEnrollmentUI.cs">
       <SubType>Form</SubType>
     </Compile>
