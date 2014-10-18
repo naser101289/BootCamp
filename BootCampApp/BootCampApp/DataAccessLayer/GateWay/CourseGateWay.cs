@@ -15,15 +15,16 @@ namespace BootCampApp.DataAccessLayer.GateWay
 
         public CourseGateWay()
         {
-            string conn = ConfigurationManager.ConnectionStrings["BootCamp"].ConnectionString;
+            string conn = @"server=NASER; database=BootCamp;integrated security=true";
             connection = new SqlConnection();
             connection.ConnectionString = conn;
         }
-        public List<Course> CourseList(string name, string address)
-        {
 
+
+        public List<Course> GetAllCourse()
+        {
             connection.Open();
-            string query = string.Format("SELECT Course_Title FROM t_Course");
+            string query = string.Format("SELECT * FROM Course");
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
             List<Course> courses = new List<Course>();
@@ -31,13 +32,18 @@ namespace BootCampApp.DataAccessLayer.GateWay
             {
                 while (aReader.Read())
                 {
-                    Course course = new Course();
-                    course.CourseTitle = aReader[0].ToString();
-                    courses.Add(course);
+                    Course aCourse = new Course();
+                    aCourse.CourseId = (int)aReader[0];
+                    aCourse.CourseName = aReader[1].ToString();
+                    aCourse.CourseTitle = aReader[2].ToString();
+
+                    courses.Add(aCourse);
                 }
             }
             connection.Close();
             return courses;
         }
+
+        
     }
 }

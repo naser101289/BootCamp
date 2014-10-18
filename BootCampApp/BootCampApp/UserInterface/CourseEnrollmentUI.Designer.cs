@@ -40,9 +40,9 @@
             this.findButton = new System.Windows.Forms.Button();
             this.enrollButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.enrollmentDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.enrolledCoursesDataGridView = new System.Windows.Forms.DataGridView();
-            this.enrollmentDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledCoursesDataGridView)).BeginInit();
@@ -101,7 +101,7 @@
             // regnoTextBox
             // 
             this.regnoTextBox.Location = new System.Drawing.Point(93, 17);
-            this.regnoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.regnoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.regnoTextBox.Name = "regnoTextBox";
             this.regnoTextBox.Size = new System.Drawing.Size(278, 20);
             this.regnoTextBox.TabIndex = 1;
@@ -109,7 +109,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(93, 54);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(355, 20);
             this.nameTextBox.TabIndex = 1;
@@ -117,7 +117,7 @@
             // emailTextBox
             // 
             this.emailTextBox.Location = new System.Drawing.Point(93, 94);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(355, 20);
             this.emailTextBox.TabIndex = 1;
@@ -126,7 +126,7 @@
             // 
             this.courseComboBox.FormattingEnabled = true;
             this.courseComboBox.Location = new System.Drawing.Point(93, 128);
-            this.courseComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.courseComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.courseComboBox.Name = "courseComboBox";
             this.courseComboBox.Size = new System.Drawing.Size(278, 21);
             this.courseComboBox.TabIndex = 2;
@@ -134,7 +134,7 @@
             // findButton
             // 
             this.findButton.Location = new System.Drawing.Point(391, 14);
-            this.findButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.findButton.Margin = new System.Windows.Forms.Padding(2);
             this.findButton.Name = "findButton";
             this.findButton.Size = new System.Drawing.Size(56, 36);
             this.findButton.TabIndex = 3;
@@ -145,13 +145,13 @@
             // enrollButton
             // 
             this.enrollButton.Location = new System.Drawing.Point(391, 128);
-            this.enrollButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.enrollButton.Margin = new System.Windows.Forms.Padding(2);
             this.enrollButton.Name = "enrollButton";
             this.enrollButton.Size = new System.Drawing.Size(56, 48);
             this.enrollButton.TabIndex = 3;
             this.enrollButton.Text = "Enroll";
             this.enrollButton.UseVisualStyleBackColor = true;
-            //this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
+            this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
             // 
             // groupBox1
             // 
@@ -168,20 +168,27 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.nameTextBox);
             this.groupBox1.Location = new System.Drawing.Point(26, 28);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(462, 184);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // enrollmentDateTimePicker
+            // 
+            this.enrollmentDateTimePicker.Location = new System.Drawing.Point(93, 158);
+            this.enrollmentDateTimePicker.Name = "enrollmentDateTimePicker";
+            this.enrollmentDateTimePicker.Size = new System.Drawing.Size(278, 20);
+            this.enrollmentDateTimePicker.TabIndex = 4;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.enrolledCoursesDataGridView);
             this.groupBox2.Location = new System.Drawing.Point(26, 232);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(462, 182);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
@@ -191,18 +198,11 @@
             // 
             this.enrolledCoursesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.enrolledCoursesDataGridView.Location = new System.Drawing.Point(9, 17);
-            this.enrolledCoursesDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.enrolledCoursesDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.enrolledCoursesDataGridView.Name = "enrolledCoursesDataGridView";
             this.enrolledCoursesDataGridView.RowTemplate.Height = 24;
             this.enrolledCoursesDataGridView.Size = new System.Drawing.Size(448, 160);
             this.enrolledCoursesDataGridView.TabIndex = 0;
-            // 
-            // enrollmentDateTimePicker
-            // 
-            this.enrollmentDateTimePicker.Location = new System.Drawing.Point(93, 158);
-            this.enrollmentDateTimePicker.Name = "enrollmentDateTimePicker";
-            this.enrollmentDateTimePicker.Size = new System.Drawing.Size(278, 20);
-            this.enrollmentDateTimePicker.TabIndex = 4;
             // 
             // CourseEnrollmentUI
             // 
@@ -211,7 +211,7 @@
             this.ClientSize = new System.Drawing.Size(497, 426);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CourseEnrollmentUI";
             this.Text = "Course Enrollment";
             this.groupBox1.ResumeLayout(false);

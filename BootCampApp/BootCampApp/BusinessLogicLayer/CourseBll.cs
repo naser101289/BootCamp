@@ -4,15 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootCampApp.DataAccessLayer.GateWay;
+using BootCampApp.DataAccessLayer.DataAccessObject;
 
 namespace BootCampApp.BusinessLogicLayer
 {
     class CourseBll
     {
-        public CourseGateWay ACourseGateWay;
+        CourseGateWay aCourseGateWay;
+
         public CourseBll()
         {
-            ACourseGateWay = new CourseGateWay();
+            aCourseGateWay = new CourseGateWay();
         }
+
+        public List<Course> GetAllCourse()
+        {
+            return aCourseGateWay.GetAllCourse();
+        }
+
     }
 }

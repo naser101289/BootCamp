@@ -10,3 +10,13 @@ C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCam
 C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.CourseEnrollmentUI.resources
 C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultEntryUI.resources
 C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultSheetUI.resources
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.exe
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.pdb
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.csprojResolveAssemblyReference.cache
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.Properties.Resources.resources
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.CourseEnrollmentUI.resources
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultEntryUI.resources
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultSheetUI.resources
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.csproj.GenerateResource.Cache
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.pdb

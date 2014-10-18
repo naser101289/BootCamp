@@ -11,6 +11,7 @@ namespace BootCampApp.DataAccessLayer.DataAccessObject
         public string RegNo { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public List<Course> Courses { get; set; }
+        public int CourseId { get; set; }
+        
     }
 }
