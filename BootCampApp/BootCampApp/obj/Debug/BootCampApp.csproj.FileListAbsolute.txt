@@ -1,1 +1,2 @@
 c:\users\naser101289\documents\visual studio 2013\Projects\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe.config
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe.config
