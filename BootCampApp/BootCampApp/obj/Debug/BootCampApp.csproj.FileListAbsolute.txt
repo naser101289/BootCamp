@@ -1,1 +1,12 @@
 c:\users\naser101289\documents\visual studio 2013\Projects\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe.config
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe.config
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.pdb
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.csprojResolveAssemblyReference.cache
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.Properties.Resources.resources
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.csproj.GenerateResource.Cache
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.exe
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.pdb
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.CourseEnrollmentUI.resources
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultEntryUI.resources
+C:\Users\PC21\Desktop\GitBoot\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ResultSheetUI.resources
