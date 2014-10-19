@@ -40,7 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.viewResultSheetButton = new System.Windows.Forms.Button();
             this.resultDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // regnoTextBox
             // 
             this.regnoTextBox.Location = new System.Drawing.Point(160, 29);
-            this.regnoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.regnoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.regnoTextBox.Name = "regnoTextBox";
             this.regnoTextBox.Size = new System.Drawing.Size(104, 20);
             this.regnoTextBox.TabIndex = 9;
@@ -56,7 +56,7 @@
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(389, 211);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(77, 25);
             this.saveButton.TabIndex = 14;
@@ -77,7 +77,7 @@
             // findButton
             // 
             this.findButton.Location = new System.Drawing.Point(268, 29);
-            this.findButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.findButton.Margin = new System.Windows.Forms.Padding(2);
             this.findButton.Name = "findButton";
             this.findButton.Size = new System.Drawing.Size(79, 25);
             this.findButton.TabIndex = 15;
@@ -109,7 +109,7 @@
             // 
             this.courseComboBox.FormattingEnabled = true;
             this.courseComboBox.Location = new System.Drawing.Point(160, 140);
-            this.courseComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.courseComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.courseComboBox.Name = "courseComboBox";
             this.courseComboBox.Size = new System.Drawing.Size(187, 21);
             this.courseComboBox.TabIndex = 13;
@@ -127,7 +127,7 @@
             // emailTextBox
             // 
             this.emailTextBox.Location = new System.Drawing.Point(160, 106);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(188, 20);
             this.emailTextBox.TabIndex = 10;
@@ -145,7 +145,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(160, 67);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(187, 20);
             this.nameTextBox.TabIndex = 11;
@@ -160,18 +160,18 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Score(%)";
             // 
-            // textBox1
+            // scoreTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(160, 177);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 20);
-            this.textBox1.TabIndex = 17;
+            this.scoreTextBox.Location = new System.Drawing.Point(160, 177);
+            this.scoreTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.Size = new System.Drawing.Size(188, 20);
+            this.scoreTextBox.TabIndex = 17;
             // 
             // viewResultSheetButton
             // 
             this.viewResultSheetButton.Location = new System.Drawing.Point(362, 29);
-            this.viewResultSheetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewResultSheetButton.Margin = new System.Windows.Forms.Padding(2);
             this.viewResultSheetButton.Name = "viewResultSheetButton";
             this.viewResultSheetButton.Size = new System.Drawing.Size(104, 25);
             this.viewResultSheetButton.TabIndex = 15;
@@ -193,7 +193,7 @@
             this.ClientSize = new System.Drawing.Size(468, 245);
             this.Controls.Add(this.resultDateTimePicker);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.regnoTextBox);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label1);
@@ -206,7 +206,7 @@
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nameTextBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ResultEntryUI";
             this.Text = "ResultEntryUI";
             this.ResumeLayout(false);
@@ -228,7 +228,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox scoreTextBox;
         private System.Windows.Forms.Button viewResultSheetButton;
         private System.Windows.Forms.DateTimePicker resultDateTimePicker;
     }

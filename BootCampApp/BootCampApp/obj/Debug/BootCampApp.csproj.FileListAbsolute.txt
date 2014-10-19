@@ -20,3 +20,4 @@ C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Deb
 C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.csproj.GenerateResource.Cache
 C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.exe
 C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\bin\Debug\BootCampApp.pdb
+C:\Users\naser101289\Desktop\New folder\BootCamp\BootCampApp\BootCampApp\obj\Debug\BootCampApp.UserInterface.ShowResultUI.resources

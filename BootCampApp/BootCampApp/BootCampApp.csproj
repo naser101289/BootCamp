@@ -46,11 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogicLayer\CourseBll.cs" />
+    <Compile Include="BusinessLogicLayer\ResultBll.cs" />
     <Compile Include="BusinessLogicLayer\StudentBll.cs" />
     <Compile Include="DataAccessLayer\DataAccessObject\Course.cs" />
+    <Compile Include="DataAccessLayer\DataAccessObject\Result.cs" />
     <Compile Include="DataAccessLayer\DataAccessObject\Student.cs" />
     <Compile Include="DataAccessLayer\GateWay\CourseGateWay.cs" />
+    <Compile Include="DataAccessLayer\GateWay\ResultGateWay.cs" />
     <Compile Include="DataAccessLayer\GateWay\StudentGateWay.cs" />
+    <Compile Include="DataAccessLayer\View\CourseResultView.cs" />
     <Compile Include="DataAccessLayer\View\StudentCourseView.cs" />
     <Compile Include="UserInterface\CourseEnrollmentUI.cs">
       <SubType>Form</SubType>
@@ -78,6 +82,12 @@
     <Compile Include="UserInterface\ResultSheetUI.Designer.cs">
       <DependentUpon>ResultSheetUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\ShowResultUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\ShowResultUI.Designer.cs">
+      <DependentUpon>ShowResultUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -95,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\ResultSheetUI.resx">
       <DependentUpon>ResultSheetUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\ShowResultUI.resx">
+      <DependentUpon>ShowResultUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
