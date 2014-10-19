@@ -50,7 +50,7 @@ namespace BootCampApp.UserInterface
             
             aStudentBll = new StudentBll();
             
-            student = aStudentBll.GetStudent(regnoTextBox.Text);
+            aStudentBll.GetStudent(regnoTextBox.Text);
            // nameTextBox.Text = ;
            // emailTextBox.Text = ;
             

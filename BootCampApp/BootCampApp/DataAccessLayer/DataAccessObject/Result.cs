@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace BootCampApp.DataAccessLayer.DataAccessObject
 {
-    class Student
+    class Result
     {
-        public string RegNo { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public int CourseId { get; set; }
-
+        
+        public string RegNo { set; get; }
+        public int CourseId { set; get; }
+        public int Score { set; get; }
     }
 }
